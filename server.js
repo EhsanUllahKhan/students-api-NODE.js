@@ -15,15 +15,15 @@ try {
 }
 
 
-// const Students = connection.define("users", {
-//     name: Sequelize.STRING,
-//     age: Sequelize.INTEGER,
-//     spec: Sequelize.STRING
-// });
+const Students = connection.define("users", {
+    name: Sequelize.STRING,
+    age: Sequelize.INTEGER,
+    spec: Sequelize.STRING
+});
 
-// connection.sync({
-//     logging: console.log
-// });
+connection.sync({
+    logging: console.log
+});
 
 
 const app = express();
